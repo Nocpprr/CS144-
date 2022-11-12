@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 For build prereqs, see [the CS144 VM setup instructions](https://web.stanford.edu/class/cs144/vm_howto).
 
 ## Sponge quickstart
@@ -71,3 +72,7 @@ To format (you'll need `clang-format`):
 To see all available targets,
 
     $ make help
+=======
+# CS144-
+Sponge
+>>>>>>> 9e5b828b392ab6432c58370401317f70c90c5662
