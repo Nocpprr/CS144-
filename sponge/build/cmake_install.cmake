@@ -1,4 +1,4 @@
-# Install script for directory: /home/feng/SSH/Project_Linux_TCPIP/sponge
+# Install script for directory: /mnt/hgfs/SSH/Project_CS144/lab1/sponge
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,10 +39,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/feng/SSH/Project_Linux_TCPIP/sponge/build/libsponge/cmake_install.cmake")
-  include("/home/feng/SSH/Project_Linux_TCPIP/sponge/build/apps/cmake_install.cmake")
-  include("/home/feng/SSH/Project_Linux_TCPIP/sponge/build/tests/cmake_install.cmake")
-  include("/home/feng/SSH/Project_Linux_TCPIP/sponge/build/doctests/cmake_install.cmake")
+  include("/mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/libsponge/cmake_install.cmake")
+  include("/mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/apps/cmake_install.cmake")
+  include("/mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/tests/cmake_install.cmake")
+  include("/mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/doctests/cmake_install.cmake")
 
 endif()
 
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/feng/SSH/Project_Linux_TCPIP/sponge/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

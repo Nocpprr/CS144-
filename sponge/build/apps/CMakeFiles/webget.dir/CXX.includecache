@@ -90,11 +90,11 @@ system_error
 vector
 -
 
-/home/feng/SSH/Project_Linux_TCPIP/sponge/apps/webget.cc
+/mnt/hgfs/SSH/Project_CS144/lab1/sponge/apps/webget.cc
 socket.hh
-/home/feng/SSH/Project_Linux_TCPIP/sponge/apps/socket.hh
+/mnt/hgfs/SSH/Project_CS144/lab1/sponge/apps/socket.hh
 util.hh
-/home/feng/SSH/Project_Linux_TCPIP/sponge/apps/util.hh
+/mnt/hgfs/SSH/Project_CS144/lab1/sponge/apps/util.hh
 cstdlib
 -
 iostream

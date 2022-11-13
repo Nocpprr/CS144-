@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/feng/SSH/Project_Linux_TCPIP/sponge
+CMAKE_SOURCE_DIR = /mnt/hgfs/SSH/Project_CS144/lab1/sponge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/feng/SSH/Project_Linux_TCPIP/sponge/build
+CMAKE_BINARY_DIR = /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -89,11 +78,22 @@ test/fast: test
 
 .PHONY : test/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/feng/SSH/Project_Linux_TCPIP/sponge/build/CMakeFiles /home/feng/SSH/Project_Linux_TCPIP/sponge/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/CMakeFiles /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/feng/SSH/Project_Linux_TCPIP/sponge/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -148,6 +148,32 @@ check_lab6/fast:
 .PHONY : check_lab6/fast
 
 #=============================================================================
+# Target rules for targets named check_lab3
+
+# Build rule for target.
+check_lab3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 check_lab3
+.PHONY : check_lab3
+
+# fast build rule for target.
+check_lab3/fast:
+	$(MAKE) -f CMakeFiles/check_lab3.dir/build.make CMakeFiles/check_lab3.dir/build
+.PHONY : check_lab3/fast
+
+#=============================================================================
+# Target rules for targets named check_lab2
+
+# Build rule for target.
+check_lab2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 check_lab2
+.PHONY : check_lab2
+
+# fast build rule for target.
+check_lab2/fast:
+	$(MAKE) -f CMakeFiles/check_lab2.dir/build.make CMakeFiles/check_lab2.dir/build
+.PHONY : check_lab2/fast
+
+#=============================================================================
 # Target rules for targets named check_lab5
 
 # Build rule for target.
@@ -174,17 +200,17 @@ check_lab4/fast:
 .PHONY : check_lab4/fast
 
 #=============================================================================
-# Target rules for targets named tidy_quiet_util__buffer.cc
+# Target rules for targets named check_lab1
 
 # Build rule for target.
-tidy_quiet_util__buffer.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_util__buffer.cc
-.PHONY : tidy_quiet_util__buffer.cc
+check_lab1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 check_lab1
+.PHONY : check_lab1
 
 # fast build rule for target.
-tidy_quiet_util__buffer.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_util__buffer.cc.dir/build.make CMakeFiles/tidy_quiet_util__buffer.cc.dir/build
-.PHONY : tidy_quiet_util__buffer.cc/fast
+check_lab1/fast:
+	$(MAKE) -f CMakeFiles/check_lab1.dir/build.make CMakeFiles/check_lab1.dir/build
+.PHONY : check_lab1/fast
 
 #=============================================================================
 # Target rules for targets named check_lab0
@@ -200,576 +226,17 @@ check_lab0/fast:
 .PHONY : check_lab0/fast
 
 #=============================================================================
-# Target rules for targets named tidy_libsponge__byte_stream.cc
+# Target rules for targets named check_webget
 
 # Build rule for target.
-tidy_libsponge__byte_stream.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_libsponge__byte_stream.cc
-.PHONY : tidy_libsponge__byte_stream.cc
+check_webget: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 check_webget
+.PHONY : check_webget
 
 # fast build rule for target.
-tidy_libsponge__byte_stream.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_libsponge__byte_stream.cc.dir/build.make CMakeFiles/tidy_libsponge__byte_stream.cc.dir/build
-.PHONY : tidy_libsponge__byte_stream.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_doctests__parser_dt.cc
-
-# Build rule for target.
-tidy_quiet_doctests__parser_dt.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_doctests__parser_dt.cc
-.PHONY : tidy_quiet_doctests__parser_dt.cc
-
-# fast build rule for target.
-tidy_quiet_doctests__parser_dt.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__parser_dt.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__parser_dt.cc.dir/build
-.PHONY : tidy_quiet_doctests__parser_dt.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_libsponge__byte_stream.cc
-
-# Build rule for target.
-tidy_quiet_libsponge__byte_stream.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_libsponge__byte_stream.cc
-.PHONY : tidy_quiet_libsponge__byte_stream.cc
-
-# fast build rule for target.
-tidy_quiet_libsponge__byte_stream.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_libsponge__byte_stream.cc.dir/build.make CMakeFiles/tidy_quiet_libsponge__byte_stream.cc.dir/build
-.PHONY : tidy_quiet_libsponge__byte_stream.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_tests__byte_stream_one_write.cc
-
-# Build rule for target.
-tidy_tests__byte_stream_one_write.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_tests__byte_stream_one_write.cc
-.PHONY : tidy_tests__byte_stream_one_write.cc
-
-# fast build rule for target.
-tidy_tests__byte_stream_one_write.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_tests__byte_stream_one_write.cc.dir/build.make CMakeFiles/tidy_tests__byte_stream_one_write.cc.dir/build
-.PHONY : tidy_tests__byte_stream_one_write.cc/fast
-
-#=============================================================================
-# Target rules for targets named check_lab2
-
-# Build rule for target.
-check_lab2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 check_lab2
-.PHONY : check_lab2
-
-# fast build rule for target.
-check_lab2/fast:
-	$(MAKE) -f CMakeFiles/check_lab2.dir/build.make CMakeFiles/check_lab2.dir/build
-.PHONY : check_lab2/fast
-
-#=============================================================================
-# Target rules for targets named tidy_doctests__socket_example_3.cc
-
-# Build rule for target.
-tidy_doctests__socket_example_3.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_doctests__socket_example_3.cc
-.PHONY : tidy_doctests__socket_example_3.cc
-
-# fast build rule for target.
-tidy_doctests__socket_example_3.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_doctests__socket_example_3.cc.dir/build.make CMakeFiles/tidy_doctests__socket_example_3.cc.dir/build
-.PHONY : tidy_doctests__socket_example_3.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_doctests__socket_example_3.cc
-
-# Build rule for target.
-tidy_quiet_doctests__socket_example_3.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_doctests__socket_example_3.cc
-.PHONY : tidy_quiet_doctests__socket_example_3.cc
-
-# fast build rule for target.
-tidy_quiet_doctests__socket_example_3.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__socket_example_3.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__socket_example_3.cc.dir/build
-.PHONY : tidy_quiet_doctests__socket_example_3.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_doctests__socket_example_2.cc
-
-# Build rule for target.
-tidy_quiet_doctests__socket_example_2.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_doctests__socket_example_2.cc
-.PHONY : tidy_quiet_doctests__socket_example_2.cc
-
-# fast build rule for target.
-tidy_quiet_doctests__socket_example_2.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__socket_example_2.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__socket_example_2.cc.dir/build
-.PHONY : tidy_quiet_doctests__socket_example_2.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_util__file_descriptor.cc
-
-# Build rule for target.
-tidy_quiet_util__file_descriptor.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_util__file_descriptor.cc
-.PHONY : tidy_quiet_util__file_descriptor.cc
-
-# fast build rule for target.
-tidy_quiet_util__file_descriptor.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_util__file_descriptor.cc.dir/build.make CMakeFiles/tidy_quiet_util__file_descriptor.cc.dir/build
-.PHONY : tidy_quiet_util__file_descriptor.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_tests__byte_stream_construction.cc
-
-# Build rule for target.
-tidy_tests__byte_stream_construction.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_tests__byte_stream_construction.cc
-.PHONY : tidy_tests__byte_stream_construction.cc
-
-# fast build rule for target.
-tidy_tests__byte_stream_construction.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_tests__byte_stream_construction.cc.dir/build.make CMakeFiles/tidy_tests__byte_stream_construction.cc.dir/build
-.PHONY : tidy_tests__byte_stream_construction.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_util__util.cc
-
-# Build rule for target.
-tidy_util__util.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_util__util.cc
-.PHONY : tidy_util__util.cc
-
-# fast build rule for target.
-tidy_util__util.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_util__util.cc.dir/build.make CMakeFiles/tidy_util__util.cc.dir/build
-.PHONY : tidy_util__util.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_doctests__socket_dt.cc
-
-# Build rule for target.
-tidy_doctests__socket_dt.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_doctests__socket_dt.cc
-.PHONY : tidy_doctests__socket_dt.cc
-
-# fast build rule for target.
-tidy_doctests__socket_dt.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_doctests__socket_dt.cc.dir/build.make CMakeFiles/tidy_doctests__socket_dt.cc.dir/build
-.PHONY : tidy_doctests__socket_dt.cc/fast
-
-#=============================================================================
-# Target rules for targets named doc
-
-# Build rule for target.
-doc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 doc
-.PHONY : doc
-
-# fast build rule for target.
-doc/fast:
-	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
-.PHONY : doc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_doctests__address_example_1.cc
-
-# Build rule for target.
-tidy_doctests__address_example_1.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_doctests__address_example_1.cc
-.PHONY : tidy_doctests__address_example_1.cc
-
-# fast build rule for target.
-tidy_doctests__address_example_1.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_doctests__address_example_1.cc.dir/build.make CMakeFiles/tidy_doctests__address_example_1.cc.dir/build
-.PHONY : tidy_doctests__address_example_1.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_doctests__socket_example_2.cc
-
-# Build rule for target.
-tidy_doctests__socket_example_2.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_doctests__socket_example_2.cc
-.PHONY : tidy_doctests__socket_example_2.cc
-
-# fast build rule for target.
-tidy_doctests__socket_example_2.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_doctests__socket_example_2.cc.dir/build.make CMakeFiles/tidy_doctests__socket_example_2.cc.dir/build
-.PHONY : tidy_doctests__socket_example_2.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_doctests__address_example_2.cc
-
-# Build rule for target.
-tidy_doctests__address_example_2.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_doctests__address_example_2.cc
-.PHONY : tidy_doctests__address_example_2.cc
-
-# fast build rule for target.
-tidy_doctests__address_example_2.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_doctests__address_example_2.cc.dir/build.make CMakeFiles/tidy_doctests__address_example_2.cc.dir/build
-.PHONY : tidy_doctests__address_example_2.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_tests__byte_stream_capacity.cc
-
-# Build rule for target.
-tidy_quiet_tests__byte_stream_capacity.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_tests__byte_stream_capacity.cc
-.PHONY : tidy_quiet_tests__byte_stream_capacity.cc
-
-# fast build rule for target.
-tidy_quiet_tests__byte_stream_capacity.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__byte_stream_capacity.cc.dir/build.make CMakeFiles/tidy_quiet_tests__byte_stream_capacity.cc.dir/build
-.PHONY : tidy_quiet_tests__byte_stream_capacity.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_doctests__socket_dt.cc
-
-# Build rule for target.
-tidy_quiet_doctests__socket_dt.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_doctests__socket_dt.cc
-.PHONY : tidy_quiet_doctests__socket_dt.cc
-
-# fast build rule for target.
-tidy_quiet_doctests__socket_dt.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__socket_dt.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__socket_dt.cc.dir/build
-.PHONY : tidy_quiet_doctests__socket_dt.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_doctests__parser_example.cc
-
-# Build rule for target.
-tidy_quiet_doctests__parser_example.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_doctests__parser_example.cc
-.PHONY : tidy_quiet_doctests__parser_example.cc
-
-# fast build rule for target.
-tidy_quiet_doctests__parser_example.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__parser_example.cc.dir/build
-.PHONY : tidy_quiet_doctests__parser_example.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_apps__webget.cc
-
-# Build rule for target.
-tidy_quiet_apps__webget.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_apps__webget.cc
-.PHONY : tidy_quiet_apps__webget.cc
-
-# fast build rule for target.
-tidy_quiet_apps__webget.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_apps__webget.cc.dir/build.make CMakeFiles/tidy_quiet_apps__webget.cc.dir/build
-.PHONY : tidy_quiet_apps__webget.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_doctests__address_example_2.cc
-
-# Build rule for target.
-tidy_quiet_doctests__address_example_2.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_doctests__address_example_2.cc
-.PHONY : tidy_quiet_doctests__address_example_2.cc
-
-# fast build rule for target.
-tidy_quiet_doctests__address_example_2.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__address_example_2.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__address_example_2.cc.dir/build
-.PHONY : tidy_quiet_doctests__address_example_2.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_util__address.cc
-
-# Build rule for target.
-tidy_util__address.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_util__address.cc
-.PHONY : tidy_util__address.cc
-
-# fast build rule for target.
-tidy_util__address.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_util__address.cc.dir/build.make CMakeFiles/tidy_util__address.cc.dir/build
-.PHONY : tidy_util__address.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_apps__webget.cc
-
-# Build rule for target.
-tidy_apps__webget.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_apps__webget.cc
-.PHONY : tidy_apps__webget.cc
-
-# fast build rule for target.
-tidy_apps__webget.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_apps__webget.cc.dir/build.make CMakeFiles/tidy_apps__webget.cc.dir/build
-.PHONY : tidy_apps__webget.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_doctests__address_dt.cc
-
-# Build rule for target.
-tidy_quiet_doctests__address_dt.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_doctests__address_dt.cc
-.PHONY : tidy_quiet_doctests__address_dt.cc
-
-# fast build rule for target.
-tidy_quiet_doctests__address_dt.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__address_dt.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__address_dt.cc.dir/build
-.PHONY : tidy_quiet_doctests__address_dt.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_doctests__address_example_1.cc
-
-# Build rule for target.
-tidy_quiet_doctests__address_example_1.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_doctests__address_example_1.cc
-.PHONY : tidy_quiet_doctests__address_example_1.cc
-
-# fast build rule for target.
-tidy_quiet_doctests__address_example_1.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__address_example_1.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__address_example_1.cc.dir/build
-.PHONY : tidy_quiet_doctests__address_example_1.cc/fast
-
-#=============================================================================
-# Target rules for targets named check_lab3
-
-# Build rule for target.
-check_lab3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 check_lab3
-.PHONY : check_lab3
-
-# fast build rule for target.
-check_lab3/fast:
-	$(MAKE) -f CMakeFiles/check_lab3.dir/build.make CMakeFiles/check_lab3.dir/build
-.PHONY : check_lab3/fast
-
-#=============================================================================
-# Target rules for targets named tidy_doctests__address_dt.cc
-
-# Build rule for target.
-tidy_doctests__address_dt.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_doctests__address_dt.cc
-.PHONY : tidy_doctests__address_dt.cc
-
-# fast build rule for target.
-tidy_doctests__address_dt.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_doctests__address_dt.cc.dir/build.make CMakeFiles/tidy_doctests__address_dt.cc.dir/build
-.PHONY : tidy_doctests__address_dt.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_doctests__parser_dt.cc
-
-# Build rule for target.
-tidy_doctests__parser_dt.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_doctests__parser_dt.cc
-.PHONY : tidy_doctests__parser_dt.cc
-
-# fast build rule for target.
-tidy_doctests__parser_dt.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_doctests__parser_dt.cc.dir/build.make CMakeFiles/tidy_doctests__parser_dt.cc.dir/build
-.PHONY : tidy_doctests__parser_dt.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_doctests__socket_example_1.cc
-
-# Build rule for target.
-tidy_quiet_doctests__socket_example_1.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_doctests__socket_example_1.cc
-.PHONY : tidy_quiet_doctests__socket_example_1.cc
-
-# fast build rule for target.
-tidy_quiet_doctests__socket_example_1.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__socket_example_1.cc.dir/build
-.PHONY : tidy_quiet_doctests__socket_example_1.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_util__address.cc
-
-# Build rule for target.
-tidy_quiet_util__address.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_util__address.cc
-.PHONY : tidy_quiet_util__address.cc
-
-# fast build rule for target.
-tidy_quiet_util__address.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_util__address.cc.dir/build.make CMakeFiles/tidy_quiet_util__address.cc.dir/build
-.PHONY : tidy_quiet_util__address.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_doctests__address_example_3.cc
-
-# Build rule for target.
-tidy_doctests__address_example_3.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_doctests__address_example_3.cc
-.PHONY : tidy_doctests__address_example_3.cc
-
-# fast build rule for target.
-tidy_doctests__address_example_3.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_doctests__address_example_3.cc.dir/build.make CMakeFiles/tidy_doctests__address_example_3.cc.dir/build
-.PHONY : tidy_doctests__address_example_3.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_doctests__address_example_3.cc
-
-# Build rule for target.
-tidy_quiet_doctests__address_example_3.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_doctests__address_example_3.cc
-.PHONY : tidy_quiet_doctests__address_example_3.cc
-
-# fast build rule for target.
-tidy_quiet_doctests__address_example_3.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_doctests__address_example_3.cc.dir/build.make CMakeFiles/tidy_quiet_doctests__address_example_3.cc.dir/build
-.PHONY : tidy_quiet_doctests__address_example_3.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_util__eventloop.cc
-
-# Build rule for target.
-tidy_quiet_util__eventloop.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_util__eventloop.cc
-.PHONY : tidy_quiet_util__eventloop.cc
-
-# fast build rule for target.
-tidy_quiet_util__eventloop.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_util__eventloop.cc.dir/build.make CMakeFiles/tidy_quiet_util__eventloop.cc.dir/build
-.PHONY : tidy_quiet_util__eventloop.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_util__eventloop.cc
-
-# Build rule for target.
-tidy_util__eventloop.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_util__eventloop.cc
-.PHONY : tidy_util__eventloop.cc
-
-# fast build rule for target.
-tidy_util__eventloop.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_util__eventloop.cc.dir/build.make CMakeFiles/tidy_util__eventloop.cc.dir/build
-.PHONY : tidy_util__eventloop.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_util__parser.cc
-
-# Build rule for target.
-tidy_quiet_util__parser.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_util__parser.cc
-.PHONY : tidy_quiet_util__parser.cc
-
-# fast build rule for target.
-tidy_quiet_util__parser.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_util__parser.cc.dir/build.make CMakeFiles/tidy_quiet_util__parser.cc.dir/build
-.PHONY : tidy_quiet_util__parser.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_util__parser.cc
-
-# Build rule for target.
-tidy_util__parser.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_util__parser.cc
-.PHONY : tidy_util__parser.cc
-
-# fast build rule for target.
-tidy_util__parser.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_util__parser.cc.dir/build.make CMakeFiles/tidy_util__parser.cc.dir/build
-.PHONY : tidy_util__parser.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_util__socket.cc
-
-# Build rule for target.
-tidy_quiet_util__socket.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_util__socket.cc
-.PHONY : tidy_quiet_util__socket.cc
-
-# fast build rule for target.
-tidy_quiet_util__socket.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_util__socket.cc.dir/build.make CMakeFiles/tidy_quiet_util__socket.cc.dir/build
-.PHONY : tidy_quiet_util__socket.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_util__socket.cc
-
-# Build rule for target.
-tidy_util__socket.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_util__socket.cc
-.PHONY : tidy_util__socket.cc
-
-# fast build rule for target.
-tidy_util__socket.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_util__socket.cc.dir/build.make CMakeFiles/tidy_util__socket.cc.dir/build
-.PHONY : tidy_util__socket.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_tests__byte_stream_two_writes.cc
-
-# Build rule for target.
-tidy_tests__byte_stream_two_writes.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_tests__byte_stream_two_writes.cc
-.PHONY : tidy_tests__byte_stream_two_writes.cc
-
-# fast build rule for target.
-tidy_tests__byte_stream_two_writes.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_tests__byte_stream_two_writes.cc.dir/build.make CMakeFiles/tidy_tests__byte_stream_two_writes.cc.dir/build
-.PHONY : tidy_tests__byte_stream_two_writes.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_util__tun.cc
-
-# Build rule for target.
-tidy_quiet_util__tun.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_util__tun.cc
-.PHONY : tidy_quiet_util__tun.cc
-
-# fast build rule for target.
-tidy_quiet_util__tun.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_util__tun.cc.dir/build.make CMakeFiles/tidy_quiet_util__tun.cc.dir/build
-.PHONY : tidy_quiet_util__tun.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_doctests__socket_example_1.cc
-
-# Build rule for target.
-tidy_doctests__socket_example_1.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_doctests__socket_example_1.cc
-.PHONY : tidy_doctests__socket_example_1.cc
-
-# fast build rule for target.
-tidy_doctests__socket_example_1.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_doctests__socket_example_1.cc.dir/build.make CMakeFiles/tidy_doctests__socket_example_1.cc.dir/build
-.PHONY : tidy_doctests__socket_example_1.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_util__tun.cc
-
-# Build rule for target.
-tidy_util__tun.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_util__tun.cc
-.PHONY : tidy_util__tun.cc
-
-# fast build rule for target.
-tidy_util__tun.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_util__tun.cc.dir/build.make CMakeFiles/tidy_util__tun.cc.dir/build
-.PHONY : tidy_util__tun.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_tests__byte_stream_two_writes.cc
-
-# Build rule for target.
-tidy_quiet_tests__byte_stream_two_writes.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_tests__byte_stream_two_writes.cc
-.PHONY : tidy_quiet_tests__byte_stream_two_writes.cc
-
-# fast build rule for target.
-tidy_quiet_tests__byte_stream_two_writes.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__byte_stream_two_writes.cc.dir/build.make CMakeFiles/tidy_quiet_tests__byte_stream_two_writes.cc.dir/build
-.PHONY : tidy_quiet_tests__byte_stream_two_writes.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_tests__byte_stream_capacity.cc
-
-# Build rule for target.
-tidy_tests__byte_stream_capacity.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_tests__byte_stream_capacity.cc
-.PHONY : tidy_tests__byte_stream_capacity.cc
-
-# fast build rule for target.
-tidy_tests__byte_stream_capacity.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_tests__byte_stream_capacity.cc.dir/build.make CMakeFiles/tidy_tests__byte_stream_capacity.cc.dir/build
-.PHONY : tidy_tests__byte_stream_capacity.cc/fast
+check_webget/fast:
+	$(MAKE) -f CMakeFiles/check_webget.dir/build.make CMakeFiles/check_webget.dir/build
+.PHONY : check_webget/fast
 
 #=============================================================================
 # Target rules for targets named format
@@ -783,188 +250,6 @@ format: cmake_check_build_system
 format/fast:
 	$(MAKE) -f CMakeFiles/format.dir/build.make CMakeFiles/format.dir/build
 .PHONY : format/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_util__util.cc
-
-# Build rule for target.
-tidy_quiet_util__util.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_util__util.cc
-.PHONY : tidy_quiet_util__util.cc
-
-# fast build rule for target.
-tidy_quiet_util__util.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_util__util.cc.dir/build.make CMakeFiles/tidy_quiet_util__util.cc.dir/build
-.PHONY : tidy_quiet_util__util.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_tests__byte_stream_construction.cc
-
-# Build rule for target.
-tidy_quiet_tests__byte_stream_construction.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_tests__byte_stream_construction.cc
-.PHONY : tidy_quiet_tests__byte_stream_construction.cc
-
-# fast build rule for target.
-tidy_quiet_tests__byte_stream_construction.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__byte_stream_construction.cc.dir/build.make CMakeFiles/tidy_quiet_tests__byte_stream_construction.cc.dir/build
-.PHONY : tidy_quiet_tests__byte_stream_construction.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_doctests__parser_example.cc
-
-# Build rule for target.
-tidy_doctests__parser_example.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_doctests__parser_example.cc
-.PHONY : tidy_doctests__parser_example.cc
-
-# fast build rule for target.
-tidy_doctests__parser_example.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_doctests__parser_example.cc.dir/build.make CMakeFiles/tidy_doctests__parser_example.cc.dir/build
-.PHONY : tidy_doctests__parser_example.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_tests__byte_stream_many_writes.cc
-
-# Build rule for target.
-tidy_quiet_tests__byte_stream_many_writes.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_tests__byte_stream_many_writes.cc
-.PHONY : tidy_quiet_tests__byte_stream_many_writes.cc
-
-# fast build rule for target.
-tidy_quiet_tests__byte_stream_many_writes.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__byte_stream_many_writes.cc.dir/build.make CMakeFiles/tidy_quiet_tests__byte_stream_many_writes.cc.dir/build
-.PHONY : tidy_quiet_tests__byte_stream_many_writes.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_tests__byte_stream_many_writes.cc
-
-# Build rule for target.
-tidy_tests__byte_stream_many_writes.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_tests__byte_stream_many_writes.cc
-.PHONY : tidy_tests__byte_stream_many_writes.cc
-
-# fast build rule for target.
-tidy_tests__byte_stream_many_writes.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_tests__byte_stream_many_writes.cc.dir/build.make CMakeFiles/tidy_tests__byte_stream_many_writes.cc.dir/build
-.PHONY : tidy_tests__byte_stream_many_writes.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_tests__byte_stream_one_write.cc
-
-# Build rule for target.
-tidy_quiet_tests__byte_stream_one_write.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_tests__byte_stream_one_write.cc
-.PHONY : tidy_quiet_tests__byte_stream_one_write.cc
-
-# fast build rule for target.
-tidy_quiet_tests__byte_stream_one_write.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__byte_stream_one_write.cc.dir/build.make CMakeFiles/tidy_quiet_tests__byte_stream_one_write.cc.dir/build
-.PHONY : tidy_quiet_tests__byte_stream_one_write.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_quiet_tests__byte_stream_test_harness.cc
-
-# Build rule for target.
-tidy_quiet_tests__byte_stream_test_harness.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_quiet_tests__byte_stream_test_harness.cc
-.PHONY : tidy_quiet_tests__byte_stream_test_harness.cc
-
-# fast build rule for target.
-tidy_quiet_tests__byte_stream_test_harness.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_quiet_tests__byte_stream_test_harness.cc.dir/build.make CMakeFiles/tidy_quiet_tests__byte_stream_test_harness.cc.dir/build
-.PHONY : tidy_quiet_tests__byte_stream_test_harness.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_tests__byte_stream_test_harness.cc
-
-# Build rule for target.
-tidy_tests__byte_stream_test_harness.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_tests__byte_stream_test_harness.cc
-.PHONY : tidy_tests__byte_stream_test_harness.cc
-
-# fast build rule for target.
-tidy_tests__byte_stream_test_harness.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_tests__byte_stream_test_harness.cc.dir/build.make CMakeFiles/tidy_tests__byte_stream_test_harness.cc.dir/build
-.PHONY : tidy_tests__byte_stream_test_harness.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy_util__buffer.cc
-
-# Build rule for target.
-tidy_util__buffer.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_util__buffer.cc
-.PHONY : tidy_util__buffer.cc
-
-# fast build rule for target.
-tidy_util__buffer.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_util__buffer.cc.dir/build.make CMakeFiles/tidy_util__buffer.cc.dir/build
-.PHONY : tidy_util__buffer.cc/fast
-
-#=============================================================================
-# Target rules for targets named tidy
-
-# Build rule for target.
-tidy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy
-.PHONY : tidy
-
-# fast build rule for target.
-tidy/fast:
-	$(MAKE) -f CMakeFiles/tidy.dir/build.make CMakeFiles/tidy.dir/build
-.PHONY : tidy/fast
-
-#=============================================================================
-# Target rules for targets named tidy_verbose
-
-# Build rule for target.
-tidy_verbose: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_verbose
-.PHONY : tidy_verbose
-
-# fast build rule for target.
-tidy_verbose/fast:
-	$(MAKE) -f CMakeFiles/tidy_verbose.dir/build.make CMakeFiles/tidy_verbose.dir/build
-.PHONY : tidy_verbose/fast
-
-#=============================================================================
-# Target rules for targets named check_lab1
-
-# Build rule for target.
-check_lab1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 check_lab1
-.PHONY : check_lab1
-
-# fast build rule for target.
-check_lab1/fast:
-	$(MAKE) -f CMakeFiles/check_lab1.dir/build.make CMakeFiles/check_lab1.dir/build
-.PHONY : check_lab1/fast
-
-#=============================================================================
-# Target rules for targets named tidy_util__file_descriptor.cc
-
-# Build rule for target.
-tidy_util__file_descriptor.cc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tidy_util__file_descriptor.cc
-.PHONY : tidy_util__file_descriptor.cc
-
-# fast build rule for target.
-tidy_util__file_descriptor.cc/fast:
-	$(MAKE) -f CMakeFiles/tidy_util__file_descriptor.cc.dir/build.make CMakeFiles/tidy_util__file_descriptor.cc.dir/build
-.PHONY : tidy_util__file_descriptor.cc/fast
-
-#=============================================================================
-# Target rules for targets named check_webget
-
-# Build rule for target.
-check_webget: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 check_webget
-.PHONY : check_webget
-
-# fast build rule for target.
-check_webget/fast:
-	$(MAKE) -f CMakeFiles/check_webget.dir/build.make CMakeFiles/check_webget.dir/build
-.PHONY : check_webget/fast
 
 #=============================================================================
 # Target rules for targets named sponge
@@ -993,17 +278,56 @@ webget/fast:
 .PHONY : webget/fast
 
 #=============================================================================
-# Target rules for targets named byte_stream_many_writes
+# Target rules for targets named spongechecks
 
 # Build rule for target.
-byte_stream_many_writes: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 byte_stream_many_writes
-.PHONY : byte_stream_many_writes
+spongechecks: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 spongechecks
+.PHONY : spongechecks
 
 # fast build rule for target.
-byte_stream_many_writes/fast:
-	$(MAKE) -f tests/CMakeFiles/byte_stream_many_writes.dir/build.make tests/CMakeFiles/byte_stream_many_writes.dir/build
-.PHONY : byte_stream_many_writes/fast
+spongechecks/fast:
+	$(MAKE) -f tests/CMakeFiles/spongechecks.dir/build.make tests/CMakeFiles/spongechecks.dir/build
+.PHONY : spongechecks/fast
+
+#=============================================================================
+# Target rules for targets named fsm_stream_reassembler_single
+
+# Build rule for target.
+fsm_stream_reassembler_single: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fsm_stream_reassembler_single
+.PHONY : fsm_stream_reassembler_single
+
+# fast build rule for target.
+fsm_stream_reassembler_single/fast:
+	$(MAKE) -f tests/CMakeFiles/fsm_stream_reassembler_single.dir/build.make tests/CMakeFiles/fsm_stream_reassembler_single.dir/build
+.PHONY : fsm_stream_reassembler_single/fast
+
+#=============================================================================
+# Target rules for targets named fsm_stream_reassembler_seq
+
+# Build rule for target.
+fsm_stream_reassembler_seq: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fsm_stream_reassembler_seq
+.PHONY : fsm_stream_reassembler_seq
+
+# fast build rule for target.
+fsm_stream_reassembler_seq/fast:
+	$(MAKE) -f tests/CMakeFiles/fsm_stream_reassembler_seq.dir/build.make tests/CMakeFiles/fsm_stream_reassembler_seq.dir/build
+.PHONY : fsm_stream_reassembler_seq/fast
+
+#=============================================================================
+# Target rules for targets named fsm_stream_reassembler_dup
+
+# Build rule for target.
+fsm_stream_reassembler_dup: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fsm_stream_reassembler_dup
+.PHONY : fsm_stream_reassembler_dup
+
+# fast build rule for target.
+fsm_stream_reassembler_dup/fast:
+	$(MAKE) -f tests/CMakeFiles/fsm_stream_reassembler_dup.dir/build.make tests/CMakeFiles/fsm_stream_reassembler_dup.dir/build
+.PHONY : fsm_stream_reassembler_dup/fast
 
 #=============================================================================
 # Target rules for targets named byte_stream_capacity
@@ -1019,30 +343,17 @@ byte_stream_capacity/fast:
 .PHONY : byte_stream_capacity/fast
 
 #=============================================================================
-# Target rules for targets named byte_stream_two_writes
+# Target rules for targets named fsm_stream_reassembler_holes
 
 # Build rule for target.
-byte_stream_two_writes: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 byte_stream_two_writes
-.PHONY : byte_stream_two_writes
+fsm_stream_reassembler_holes: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fsm_stream_reassembler_holes
+.PHONY : fsm_stream_reassembler_holes
 
 # fast build rule for target.
-byte_stream_two_writes/fast:
-	$(MAKE) -f tests/CMakeFiles/byte_stream_two_writes.dir/build.make tests/CMakeFiles/byte_stream_two_writes.dir/build
-.PHONY : byte_stream_two_writes/fast
-
-#=============================================================================
-# Target rules for targets named byte_stream_one_write
-
-# Build rule for target.
-byte_stream_one_write: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 byte_stream_one_write
-.PHONY : byte_stream_one_write
-
-# fast build rule for target.
-byte_stream_one_write/fast:
-	$(MAKE) -f tests/CMakeFiles/byte_stream_one_write.dir/build.make tests/CMakeFiles/byte_stream_one_write.dir/build
-.PHONY : byte_stream_one_write/fast
+fsm_stream_reassembler_holes/fast:
+	$(MAKE) -f tests/CMakeFiles/fsm_stream_reassembler_holes.dir/build.make tests/CMakeFiles/fsm_stream_reassembler_holes.dir/build
+.PHONY : fsm_stream_reassembler_holes/fast
 
 #=============================================================================
 # Target rules for targets named byte_stream_construction
@@ -1058,17 +369,95 @@ byte_stream_construction/fast:
 .PHONY : byte_stream_construction/fast
 
 #=============================================================================
-# Target rules for targets named spongechecks
+# Target rules for targets named fsm_stream_reassembler_many
 
 # Build rule for target.
-spongechecks: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 spongechecks
-.PHONY : spongechecks
+fsm_stream_reassembler_many: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fsm_stream_reassembler_many
+.PHONY : fsm_stream_reassembler_many
 
 # fast build rule for target.
-spongechecks/fast:
-	$(MAKE) -f tests/CMakeFiles/spongechecks.dir/build.make tests/CMakeFiles/spongechecks.dir/build
-.PHONY : spongechecks/fast
+fsm_stream_reassembler_many/fast:
+	$(MAKE) -f tests/CMakeFiles/fsm_stream_reassembler_many.dir/build.make tests/CMakeFiles/fsm_stream_reassembler_many.dir/build
+.PHONY : fsm_stream_reassembler_many/fast
+
+#=============================================================================
+# Target rules for targets named fsm_stream_reassembler_overlapping
+
+# Build rule for target.
+fsm_stream_reassembler_overlapping: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fsm_stream_reassembler_overlapping
+.PHONY : fsm_stream_reassembler_overlapping
+
+# fast build rule for target.
+fsm_stream_reassembler_overlapping/fast:
+	$(MAKE) -f tests/CMakeFiles/fsm_stream_reassembler_overlapping.dir/build.make tests/CMakeFiles/fsm_stream_reassembler_overlapping.dir/build
+.PHONY : fsm_stream_reassembler_overlapping/fast
+
+#=============================================================================
+# Target rules for targets named fsm_stream_reassembler_win
+
+# Build rule for target.
+fsm_stream_reassembler_win: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fsm_stream_reassembler_win
+.PHONY : fsm_stream_reassembler_win
+
+# fast build rule for target.
+fsm_stream_reassembler_win/fast:
+	$(MAKE) -f tests/CMakeFiles/fsm_stream_reassembler_win.dir/build.make tests/CMakeFiles/fsm_stream_reassembler_win.dir/build
+.PHONY : fsm_stream_reassembler_win/fast
+
+#=============================================================================
+# Target rules for targets named byte_stream_many_writes
+
+# Build rule for target.
+byte_stream_many_writes: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 byte_stream_many_writes
+.PHONY : byte_stream_many_writes
+
+# fast build rule for target.
+byte_stream_many_writes/fast:
+	$(MAKE) -f tests/CMakeFiles/byte_stream_many_writes.dir/build.make tests/CMakeFiles/byte_stream_many_writes.dir/build
+.PHONY : byte_stream_many_writes/fast
+
+#=============================================================================
+# Target rules for targets named fsm_stream_reassembler_cap
+
+# Build rule for target.
+fsm_stream_reassembler_cap: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fsm_stream_reassembler_cap
+.PHONY : fsm_stream_reassembler_cap
+
+# fast build rule for target.
+fsm_stream_reassembler_cap/fast:
+	$(MAKE) -f tests/CMakeFiles/fsm_stream_reassembler_cap.dir/build.make tests/CMakeFiles/fsm_stream_reassembler_cap.dir/build
+.PHONY : fsm_stream_reassembler_cap/fast
+
+#=============================================================================
+# Target rules for targets named byte_stream_one_write
+
+# Build rule for target.
+byte_stream_one_write: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 byte_stream_one_write
+.PHONY : byte_stream_one_write
+
+# fast build rule for target.
+byte_stream_one_write/fast:
+	$(MAKE) -f tests/CMakeFiles/byte_stream_one_write.dir/build.make tests/CMakeFiles/byte_stream_one_write.dir/build
+.PHONY : byte_stream_one_write/fast
+
+#=============================================================================
+# Target rules for targets named byte_stream_two_writes
+
+# Build rule for target.
+byte_stream_two_writes: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 byte_stream_two_writes
+.PHONY : byte_stream_two_writes
+
+# fast build rule for target.
+byte_stream_two_writes/fast:
+	$(MAKE) -f tests/CMakeFiles/byte_stream_two_writes.dir/build.make tests/CMakeFiles/byte_stream_two_writes.dir/build
+.PHONY : byte_stream_two_writes/fast
 
 #=============================================================================
 # Target rules for targets named parser_dt
@@ -1115,82 +504,35 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... test"
 	@echo "... check"
 	@echo "... check_lab6"
+	@echo "... edit_cache"
+	@echo "... test"
+	@echo "... check_lab3"
+	@echo "... check_lab2"
+	@echo "... rebuild_cache"
 	@echo "... check_lab5"
 	@echo "... check_lab4"
-	@echo "... tidy_quiet_util__buffer.cc"
-	@echo "... check_lab0"
-	@echo "... tidy_libsponge__byte_stream.cc"
-	@echo "... tidy_quiet_doctests__parser_dt.cc"
-	@echo "... tidy_quiet_libsponge__byte_stream.cc"
-	@echo "... tidy_tests__byte_stream_one_write.cc"
-	@echo "... check_lab2"
-	@echo "... tidy_doctests__socket_example_3.cc"
-	@echo "... tidy_quiet_doctests__socket_example_3.cc"
-	@echo "... tidy_quiet_doctests__socket_example_2.cc"
-	@echo "... tidy_quiet_util__file_descriptor.cc"
-	@echo "... tidy_tests__byte_stream_construction.cc"
-	@echo "... tidy_util__util.cc"
-	@echo "... tidy_doctests__socket_dt.cc"
-	@echo "... doc"
-	@echo "... tidy_doctests__address_example_1.cc"
-	@echo "... tidy_doctests__socket_example_2.cc"
-	@echo "... tidy_doctests__address_example_2.cc"
-	@echo "... tidy_quiet_tests__byte_stream_capacity.cc"
-	@echo "... tidy_quiet_doctests__socket_dt.cc"
-	@echo "... tidy_quiet_doctests__parser_example.cc"
-	@echo "... tidy_quiet_apps__webget.cc"
-	@echo "... tidy_quiet_doctests__address_example_2.cc"
-	@echo "... tidy_util__address.cc"
-	@echo "... tidy_apps__webget.cc"
-	@echo "... tidy_quiet_doctests__address_dt.cc"
-	@echo "... tidy_quiet_doctests__address_example_1.cc"
-	@echo "... check_lab3"
-	@echo "... tidy_doctests__address_dt.cc"
-	@echo "... tidy_doctests__parser_dt.cc"
-	@echo "... tidy_quiet_doctests__socket_example_1.cc"
-	@echo "... tidy_quiet_util__address.cc"
-	@echo "... tidy_doctests__address_example_3.cc"
-	@echo "... tidy_quiet_doctests__address_example_3.cc"
-	@echo "... tidy_quiet_util__eventloop.cc"
-	@echo "... tidy_util__eventloop.cc"
-	@echo "... tidy_quiet_util__parser.cc"
-	@echo "... tidy_util__parser.cc"
-	@echo "... tidy_quiet_util__socket.cc"
-	@echo "... tidy_util__socket.cc"
-	@echo "... tidy_tests__byte_stream_two_writes.cc"
-	@echo "... tidy_quiet_util__tun.cc"
-	@echo "... tidy_doctests__socket_example_1.cc"
-	@echo "... tidy_util__tun.cc"
-	@echo "... tidy_quiet_tests__byte_stream_two_writes.cc"
-	@echo "... tidy_tests__byte_stream_capacity.cc"
-	@echo "... format"
-	@echo "... tidy_quiet_util__util.cc"
-	@echo "... tidy_quiet_tests__byte_stream_construction.cc"
-	@echo "... tidy_doctests__parser_example.cc"
-	@echo "... tidy_quiet_tests__byte_stream_many_writes.cc"
-	@echo "... tidy_tests__byte_stream_many_writes.cc"
-	@echo "... tidy_quiet_tests__byte_stream_one_write.cc"
-	@echo "... tidy_quiet_tests__byte_stream_test_harness.cc"
-	@echo "... tidy_tests__byte_stream_test_harness.cc"
-	@echo "... tidy_util__buffer.cc"
-	@echo "... tidy"
-	@echo "... tidy_verbose"
 	@echo "... check_lab1"
-	@echo "... tidy_util__file_descriptor.cc"
+	@echo "... check_lab0"
 	@echo "... check_webget"
+	@echo "... format"
 	@echo "... sponge"
 	@echo "... webget"
-	@echo "... byte_stream_many_writes"
-	@echo "... byte_stream_capacity"
-	@echo "... byte_stream_two_writes"
-	@echo "... byte_stream_one_write"
-	@echo "... byte_stream_construction"
 	@echo "... spongechecks"
+	@echo "... fsm_stream_reassembler_single"
+	@echo "... fsm_stream_reassembler_seq"
+	@echo "... fsm_stream_reassembler_dup"
+	@echo "... byte_stream_capacity"
+	@echo "... fsm_stream_reassembler_holes"
+	@echo "... byte_stream_construction"
+	@echo "... fsm_stream_reassembler_many"
+	@echo "... fsm_stream_reassembler_overlapping"
+	@echo "... fsm_stream_reassembler_win"
+	@echo "... byte_stream_many_writes"
+	@echo "... fsm_stream_reassembler_cap"
+	@echo "... byte_stream_one_write"
+	@echo "... byte_stream_two_writes"
 	@echo "... parser_dt"
 	@echo "... socket_dt"
 	@echo "... address_dt"

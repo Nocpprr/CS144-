@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/feng/SSH/Project_Linux_TCPIP/sponge/tests/byte_stream_one_write.cc" "/home/feng/SSH/Project_Linux_TCPIP/sponge/build/tests/CMakeFiles/byte_stream_one_write.dir/byte_stream_one_write.cc.o"
+  "/mnt/hgfs/SSH/Project_CS144/lab1/sponge/tests/byte_stream_one_write.cc" "/mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/tests/CMakeFiles/byte_stream_one_write.dir/byte_stream_one_write.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,8 +17,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/feng/SSH/Project_Linux_TCPIP/sponge/build/tests/CMakeFiles/spongechecks.dir/DependInfo.cmake"
-  "/home/feng/SSH/Project_Linux_TCPIP/sponge/build/libsponge/CMakeFiles/sponge.dir/DependInfo.cmake"
+  "/mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/tests/CMakeFiles/spongechecks.dir/DependInfo.cmake"
+  "/mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/libsponge/CMakeFiles/sponge.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

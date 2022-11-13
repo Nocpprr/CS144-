@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/feng/SSH/Project_Linux_TCPIP/sponge
+CMAKE_SOURCE_DIR = /mnt/hgfs/SSH/Project_CS144/lab1/sponge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/feng/SSH/Project_Linux_TCPIP/sponge/build
+CMAKE_BINARY_DIR = /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build
 
 # Utility rule file for check.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/feng/SSH/Project_Linux_TCPIP/sponge/build
 include CMakeFiles/check.dir/progress.make
 
 CMakeFiles/check:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/feng/SSH/Project_Linux_TCPIP/sponge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing libsponge..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing libsponge..."
 	../tun.sh check 144 145
 	../tap.sh check 10
 	/usr/bin/ctest --output-on-failure --timeout 10 -R '^t_|^arp_|^router_'
@@ -74,6 +74,6 @@ CMakeFiles/check.dir/clean:
 .PHONY : CMakeFiles/check.dir/clean
 
 CMakeFiles/check.dir/depend:
-	cd /home/feng/SSH/Project_Linux_TCPIP/sponge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/feng/SSH/Project_Linux_TCPIP/sponge /home/feng/SSH/Project_Linux_TCPIP/sponge /home/feng/SSH/Project_Linux_TCPIP/sponge/build /home/feng/SSH/Project_Linux_TCPIP/sponge/build /home/feng/SSH/Project_Linux_TCPIP/sponge/build/CMakeFiles/check.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/hgfs/SSH/Project_CS144/lab1/sponge /mnt/hgfs/SSH/Project_CS144/lab1/sponge /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/CMakeFiles/check.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/check.dir/depend
 

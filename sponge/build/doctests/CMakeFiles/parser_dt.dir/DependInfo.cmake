@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/feng/SSH/Project_Linux_TCPIP/sponge/doctests/parser_dt.cc" "/home/feng/SSH/Project_Linux_TCPIP/sponge/build/doctests/CMakeFiles/parser_dt.dir/parser_dt.cc.o"
+  "/mnt/hgfs/SSH/Project_CS144/lab1/sponge/doctests/parser_dt.cc" "/mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/doctests/CMakeFiles/parser_dt.dir/parser_dt.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/feng/SSH/Project_Linux_TCPIP/sponge/build/libsponge/CMakeFiles/sponge.dir/DependInfo.cmake"
+  "/mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/libsponge/CMakeFiles/sponge.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/feng/SSH/Project_Linux_TCPIP/sponge
+CMAKE_SOURCE_DIR = /mnt/hgfs/SSH/Project_CS144/lab1/sponge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/feng/SSH/Project_Linux_TCPIP/sponge/build
+CMAKE_BINARY_DIR = /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build
 
 # Utility rule file for check_lab4.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/feng/SSH/Project_Linux_TCPIP/sponge/build
 include CMakeFiles/check_lab4.dir/progress.make
 
 CMakeFiles/check_lab4:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/feng/SSH/Project_Linux_TCPIP/sponge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing the TCP connection..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Testing the TCP connection..."
 	../tun.sh check 144 145
 	/usr/bin/ctest --output-on-failure --timeout 10 -R ^t_
 
@@ -73,6 +73,6 @@ CMakeFiles/check_lab4.dir/clean:
 .PHONY : CMakeFiles/check_lab4.dir/clean
 
 CMakeFiles/check_lab4.dir/depend:
-	cd /home/feng/SSH/Project_Linux_TCPIP/sponge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/feng/SSH/Project_Linux_TCPIP/sponge /home/feng/SSH/Project_Linux_TCPIP/sponge /home/feng/SSH/Project_Linux_TCPIP/sponge/build /home/feng/SSH/Project_Linux_TCPIP/sponge/build /home/feng/SSH/Project_Linux_TCPIP/sponge/build/CMakeFiles/check_lab4.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/hgfs/SSH/Project_CS144/lab1/sponge /mnt/hgfs/SSH/Project_CS144/lab1/sponge /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/CMakeFiles/check_lab4.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/check_lab4.dir/depend
 
