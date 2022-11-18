@@ -4,5 +4,5 @@
 doctests/CMakeFiles/parser_dt.dir/parser_dt.cc.o
  ../libsponge/util/buffer.hh
  ../libsponge/util/parser.hh
- /mnt/hgfs/SSH/Project_CS144/lab1/sponge/doctests/parser_dt.cc
- /mnt/hgfs/SSH/Project_CS144/lab1/sponge/doctests/parser_example.cc
+ /home/fpl/SSH/Project_CS144/lab1/sponge/doctests/parser_dt.cc
+ /home/fpl/SSH/Project_CS144/lab1/sponge/doctests/parser_example.cc

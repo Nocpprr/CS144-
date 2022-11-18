@@ -38,9 +38,9 @@ string
 utility
 -
 
-/mnt/hgfs/SSH/Project_CS144/lab1/sponge/doctests/parser_dt.cc
+/home/fpl/SSH/Project_CS144/lab1/sponge/doctests/parser_dt.cc
 parser.hh
-/mnt/hgfs/SSH/Project_CS144/lab1/sponge/doctests/parser.hh
+/home/fpl/SSH/Project_CS144/lab1/sponge/doctests/parser.hh
 cstdint
 -
 cstdlib
@@ -50,7 +50,7 @@ stdexcept
 vector
 -
 parser_example.cc
-/mnt/hgfs/SSH/Project_CS144/lab1/sponge/doctests/parser_example.cc
+/home/fpl/SSH/Project_CS144/lab1/sponge/doctests/parser_example.cc
 
-/mnt/hgfs/SSH/Project_CS144/lab1/sponge/doctests/parser_example.cc
+/home/fpl/SSH/Project_CS144/lab1/sponge/doctests/parser_example.cc
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/SSH/Project_CS144/lab1/sponge
+CMAKE_SOURCE_DIR = /home/fpl/SSH/Project_CS144/lab1/sponge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build
+CMAKE_BINARY_DIR = /home/fpl/SSH/Project_CS144/lab1/sponge/build
 
 # Utility rule file for format.
 
@@ -71,6 +71,6 @@ CMakeFiles/format.dir/clean:
 .PHONY : CMakeFiles/format.dir/clean
 
 CMakeFiles/format.dir/depend:
-	cd /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/hgfs/SSH/Project_CS144/lab1/sponge /mnt/hgfs/SSH/Project_CS144/lab1/sponge /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build /mnt/hgfs/SSH/Project_CS144/lab1/sponge/build/CMakeFiles/format.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fpl/SSH/Project_CS144/lab1/sponge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fpl/SSH/Project_CS144/lab1/sponge /home/fpl/SSH/Project_CS144/lab1/sponge /home/fpl/SSH/Project_CS144/lab1/sponge/build /home/fpl/SSH/Project_CS144/lab1/sponge/build /home/fpl/SSH/Project_CS144/lab1/sponge/build/CMakeFiles/format.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/format.dir/depend
 

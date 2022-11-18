@@ -34,21 +34,21 @@ system_error
 vector
 -
 
-/mnt/hgfs/SSH/Project_CS144/lab1/sponge/tests/byte_stream_one_write.cc
+/home/fpl/SSH/Project_CS144/lab1/sponge/tests/byte_stream_one_write.cc
 byte_stream.hh
-/mnt/hgfs/SSH/Project_CS144/lab1/sponge/tests/byte_stream.hh
+/home/fpl/SSH/Project_CS144/lab1/sponge/tests/byte_stream.hh
 byte_stream_test_harness.hh
-/mnt/hgfs/SSH/Project_CS144/lab1/sponge/tests/byte_stream_test_harness.hh
+/home/fpl/SSH/Project_CS144/lab1/sponge/tests/byte_stream_test_harness.hh
 exception
 -
 iostream
 -
 
-/mnt/hgfs/SSH/Project_CS144/lab1/sponge/tests/byte_stream_test_harness.hh
+/home/fpl/SSH/Project_CS144/lab1/sponge/tests/byte_stream_test_harness.hh
 byte_stream.hh
-/mnt/hgfs/SSH/Project_CS144/lab1/sponge/tests/byte_stream.hh
+/home/fpl/SSH/Project_CS144/lab1/sponge/tests/byte_stream.hh
 util.hh
-/mnt/hgfs/SSH/Project_CS144/lab1/sponge/tests/util.hh
+/home/fpl/SSH/Project_CS144/lab1/sponge/tests/util.hh
 exception
 -
 initializer_list

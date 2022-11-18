@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/hgfs/SSH/Project_CS144/lab1/sponge/apps
+# Install script for directory: /home/fpl/SSH/Project_CS144/lab1/sponge/apps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -4,5 +4,5 @@
 tests/CMakeFiles/spongechecks.dir/byte_stream_test_harness.cc.o
  ../libsponge/byte_stream.hh
  ../libsponge/util/util.hh
- /mnt/hgfs/SSH/Project_CS144/lab1/sponge/tests/byte_stream_test_harness.cc
- /mnt/hgfs/SSH/Project_CS144/lab1/sponge/tests/byte_stream_test_harness.hh
+ /home/fpl/SSH/Project_CS144/lab1/sponge/tests/byte_stream_test_harness.cc
+ /home/fpl/SSH/Project_CS144/lab1/sponge/tests/byte_stream_test_harness.hh

@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++17 -g -pedantic -pedantic-errors -Werror -Wall -Wextra -Wsh
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/hgfs/SSH/Project_CS144/lab1/sponge/libsponge/util -I/mnt/hgfs/SSH/Project_CS144/lab1/sponge/libsponge/tcp_helpers -I/mnt/hgfs/SSH/Project_CS144/lab1/sponge/libsponge 
+CXX_INCLUDES = -I/home/fpl/SSH/Project_CS144/lab1/sponge/libsponge/util -I/home/fpl/SSH/Project_CS144/lab1/sponge/libsponge/tcp_helpers -I/home/fpl/SSH/Project_CS144/lab1/sponge/libsponge 
 
