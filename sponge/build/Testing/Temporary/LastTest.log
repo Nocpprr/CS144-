@@ -1,17 +1,17 @@
-Start testing: Nov 18 23:07 PST
+Start testing: Nov 29 04:33 PST
 ----------------------------------------------------------
 1/169 Testing: t_wrapping_ints_cmp
 1/169 Test: t_wrapping_ints_cmp
 Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/wrapping_integers_cmp"
 Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
-"t_wrapping_ints_cmp" start time: Nov 18 23:07 PST
+"t_wrapping_ints_cmp" start time: Nov 29 04:33 PST
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"t_wrapping_ints_cmp" end time: Nov 18 23:07 PST
+"t_wrapping_ints_cmp" end time: Nov 29 04:33 PST
 "t_wrapping_ints_cmp" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -19,14 +19,14 @@ Test Passed.
 2/169 Test: t_wrapping_ints_unwrap
 Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/wrapping_integers_unwrap"
 Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
-"t_wrapping_ints_unwrap" start time: Nov 18 23:07 PST
+"t_wrapping_ints_unwrap" start time: Nov 29 04:33 PST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"t_wrapping_ints_unwrap" end time: Nov 18 23:07 PST
+"t_wrapping_ints_unwrap" end time: Nov 29 04:33 PST
 "t_wrapping_ints_unwrap" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -34,14 +34,14 @@ Test Passed.
 3/169 Test: t_wrapping_ints_wrap
 Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/wrapping_integers_wrap"
 Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
-"t_wrapping_ints_wrap" start time: Nov 18 23:07 PST
+"t_wrapping_ints_wrap" start time: Nov 29 04:33 PST
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"t_wrapping_ints_wrap" end time: Nov 18 23:07 PST
+"t_wrapping_ints_wrap" end time: Nov 29 04:33 PST
 "t_wrapping_ints_wrap" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -49,15 +49,345 @@ Test Passed.
 4/169 Test: t_wrapping_ints_roundtrip
 Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/wrapping_integers_roundtrip"
 Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
-"t_wrapping_ints_roundtrip" start time: Nov 18 23:07 PST
+"t_wrapping_ints_roundtrip" start time: Nov 29 04:33 PST
 Output:
 ----------------------------------------------------------
 <end of output>
-Test time =   0.11 sec
+Test time =   0.10 sec
 ----------------------------------------------------------
 Test Passed.
-"t_wrapping_ints_roundtrip" end time: Nov 18 23:07 PST
+"t_wrapping_ints_roundtrip" end time: Nov 29 04:33 PST
 "t_wrapping_ints_roundtrip" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 18 23:07 PST
+5/169 Testing: t_recv_connect
+5/169 Test: t_recv_connect
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/recv_connect"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_recv_connect" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"t_recv_connect" end time: Nov 29 04:33 PST
+"t_recv_connect" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/169 Testing: t_recv_transmit
+6/169 Test: t_recv_transmit
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/recv_transmit"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_recv_transmit" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"t_recv_transmit" end time: Nov 29 04:33 PST
+"t_recv_transmit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/169 Testing: t_recv_window
+7/169 Test: t_recv_window
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/recv_window"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_recv_window" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"t_recv_window" end time: Nov 29 04:33 PST
+"t_recv_window" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/169 Testing: t_recv_reorder
+8/169 Test: t_recv_reorder
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/recv_reorder"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_recv_reorder" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"t_recv_reorder" end time: Nov 29 04:33 PST
+"t_recv_reorder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/169 Testing: t_recv_close
+9/169 Test: t_recv_close
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/recv_close"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_recv_close" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"t_recv_close" end time: Nov 29 04:33 PST
+"t_recv_close" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/169 Testing: t_recv_special
+10/169 Test: t_recv_special
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/recv_special"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_recv_special" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"t_recv_special" end time: Nov 29 04:33 PST
+"t_recv_special" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/169 Testing: t_strm_reassem_single
+18/169 Test: t_strm_reassem_single
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/fsm_stream_reassembler_single"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_strm_reassem_single" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"t_strm_reassem_single" end time: Nov 29 04:33 PST
+"t_strm_reassem_single" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/169 Testing: t_strm_reassem_seq
+19/169 Test: t_strm_reassem_seq
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/fsm_stream_reassembler_seq"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_strm_reassem_seq" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"t_strm_reassem_seq" end time: Nov 29 04:33 PST
+"t_strm_reassem_seq" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/169 Testing: t_strm_reassem_dup
+20/169 Test: t_strm_reassem_dup
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/fsm_stream_reassembler_dup"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_strm_reassem_dup" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"t_strm_reassem_dup" end time: Nov 29 04:33 PST
+"t_strm_reassem_dup" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/169 Testing: t_strm_reassem_holes
+21/169 Test: t_strm_reassem_holes
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/fsm_stream_reassembler_holes"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_strm_reassem_holes" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"t_strm_reassem_holes" end time: Nov 29 04:33 PST
+"t_strm_reassem_holes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/169 Testing: t_strm_reassem_many
+22/169 Test: t_strm_reassem_many
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/fsm_stream_reassembler_many"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_strm_reassem_many" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"t_strm_reassem_many" end time: Nov 29 04:33 PST
+"t_strm_reassem_many" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/169 Testing: t_strm_reassem_overlapping
+23/169 Test: t_strm_reassem_overlapping
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/fsm_stream_reassembler_overlapping"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_strm_reassem_overlapping" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"t_strm_reassem_overlapping" end time: Nov 29 04:33 PST
+"t_strm_reassem_overlapping" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/169 Testing: t_strm_reassem_win
+24/169 Test: t_strm_reassem_win
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/fsm_stream_reassembler_win"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_strm_reassem_win" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"t_strm_reassem_win" end time: Nov 29 04:33 PST
+"t_strm_reassem_win" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/169 Testing: t_strm_reassem_cap
+25/169 Test: t_strm_reassem_cap
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/fsm_stream_reassembler_cap"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_strm_reassem_cap" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"t_strm_reassem_cap" end time: Nov 29 04:33 PST
+"t_strm_reassem_cap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/169 Testing: t_byte_stream_construction
+26/169 Test: t_byte_stream_construction
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/byte_stream_construction"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_byte_stream_construction" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"t_byte_stream_construction" end time: Nov 29 04:33 PST
+"t_byte_stream_construction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/169 Testing: t_byte_stream_one_write
+27/169 Test: t_byte_stream_one_write
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/byte_stream_one_write"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_byte_stream_one_write" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"t_byte_stream_one_write" end time: Nov 29 04:33 PST
+"t_byte_stream_one_write" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/169 Testing: t_byte_stream_two_writes
+28/169 Test: t_byte_stream_two_writes
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/byte_stream_two_writes"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_byte_stream_two_writes" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"t_byte_stream_two_writes" end time: Nov 29 04:33 PST
+"t_byte_stream_two_writes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/169 Testing: t_byte_stream_capacity
+29/169 Test: t_byte_stream_capacity
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/byte_stream_capacity"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_byte_stream_capacity" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.37 sec
+----------------------------------------------------------
+Test Passed.
+"t_byte_stream_capacity" end time: Nov 29 04:33 PST
+"t_byte_stream_capacity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/169 Testing: t_byte_stream_many_writes
+30/169 Test: t_byte_stream_many_writes
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/tests/byte_stream_many_writes"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_byte_stream_many_writes" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"t_byte_stream_many_writes" end time: Nov 29 04:33 PST
+"t_byte_stream_many_writes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/169 Testing: t_address_dt
+53/169 Test: t_address_dt
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/doctests/address_dt"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_address_dt" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"t_address_dt" end time: Nov 29 04:33 PST
+"t_address_dt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+54/169 Testing: t_parser_dt
+54/169 Test: t_parser_dt
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/doctests/parser_dt"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_parser_dt" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"t_parser_dt" end time: Nov 29 04:33 PST
+"t_parser_dt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+55/169 Testing: t_socket_dt
+55/169 Test: t_socket_dt
+Command: "/home/fpl/SSH/Project_CS144/lab1/sponge/build/doctests/socket_dt"
+Directory: /home/fpl/SSH/Project_CS144/lab1/sponge/build
+"t_socket_dt" start time: Nov 29 04:33 PST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"t_socket_dt" end time: Nov 29 04:33 PST
+"t_socket_dt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 29 04:33 PST
