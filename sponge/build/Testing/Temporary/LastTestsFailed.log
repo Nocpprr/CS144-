@@ -1,2 +1,3 @@
-6:t_recv_transmit
-25:t_strm_reassem_cap
+13:t_send_retx
+16:t_send_close
+17:t_send_extra
