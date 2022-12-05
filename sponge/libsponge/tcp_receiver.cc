@@ -22,17 +22,19 @@ void TCPReceiver::segment_received(const TCPSegment &seg) {
         {
             _isn = _header.seqno;
             _is_first = true;
-            _reassembler.push_substring(seg.payload().copy(), 0, _header.fin);
+            _reassembler.push_substring(seg.payload().copy(), abs_n, _header.fin);
+            _checkpoint += seg.length_in_sequence_space();
         }
         return;
     }
-    abs_n = unwrap(_header.seqno, _isn, _reassembler.stream_out().bytes_written());  
+    abs_n = unwrap(_header.seqno, _isn, _checkpoint);  
     _reassembler.push_substring(seg.payload().copy(), abs_n - 1, _header.fin);
+    _checkpoint += seg.length_in_sequence_space();
 }
 
 optional<WrappingInt32> TCPReceiver::ackno() const {
     if(!_is_first) return nullopt;
-    uint64_t _written = _reassembler.stream_out().bytes_written() + 1;
+    uint64_t _written = _reassembler.first_unassembled() + 1;
     if(_reassembler.stream_out().input_ended() ) // fin 算一个 byte
     {
         ++_written;

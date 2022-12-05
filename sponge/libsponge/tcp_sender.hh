@@ -23,14 +23,36 @@ class TCPSender {
     //! outbound queue of segments that the TCPSender wants sent
     std::queue<TCPSegment> _segments_out{};
 
+    // 存储已发送但未确认的segments
+    std::queue<TCPSegment> _segments_ack{};
+
     //! retransmission timer for the connection
     unsigned int _initial_retransmission_timeout;
+    //重传时间RTO
+    unsigned int _retransmission_timeout;
+    //重传次数
+    uint16_t _consecutive_retransmissions{0};
+    //重传计时器
+    size_t _retransmission_timer{0};
+    //启动重传计时器
+    bool _is_retransmission_time_run = false;
 
     //! outgoing stream of bytes that have not yet been sent
     ByteStream _stream;
 
     //! the (absolute) sequence number for the next byte to be sent
     uint64_t _next_seqno{0};
+    // 接收方需求的序列号
+    uint64_t _ack_seqno{0};
+
+    // 开始和结束标志
+    bool _syn = false;
+    bool _fin = false;
+
+    
+    // 接收方窗口大小
+    bool _zero_window = false;
+    uint16_t _receiver_window_size{0};
 
   public:
     //! Initialize a TCPSender
@@ -55,6 +77,8 @@ class TCPSender {
 
     //! \brief create and send segments to fill as much of the window as possible
     void fill_window();
+
+    void send_Tcp_segment(TCPSegment &tcp_segment);
 
     //! \brief Notifies the TCPSender of the passage of time
     void tick(const size_t ms_since_last_tick);
